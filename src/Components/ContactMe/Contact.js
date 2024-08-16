@@ -17,7 +17,7 @@ export const Contact = () => {
    const values = {name,email,phone,clientMessage};
      
        try {
-        const res = await axios.post('http://localhost:8080/api/user',values);
+        const res = await axios.post('https://mern-portfolio-backend-ehb7.onrender.com/api/user',values);
         if(res.data.success){
             message.success(res.data.message);
             navigate('/');
